@@ -8,6 +8,10 @@
  * 輸出: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
  */
 
+function compareNumbers(a: number, b: number) {
+  return a - b;
+}
+
 export function sortNumbers(numbers: number[]): number[] {
-  // 在此實現函式
+  return numbers.sort(compareNumbers);
 }

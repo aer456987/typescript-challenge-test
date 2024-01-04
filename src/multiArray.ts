@@ -8,14 +8,6 @@
  * 輸出: [[2, 4], [6, 8], [10, 12]]
  */
 
-export function processMultiArray(arr: [number, number][]) {
-    const newArr: [ number, number ][] = [];
-    arr.forEach(item => {
-        const numArr: any = [];
-        numArr.push(item.map(num => num *2));
-        newArr.push(numArr);
-    });
-    console.log(newArr);
-    
-    return newArr;
+export function processMultiArray(arr: number[][]) {
+    return arr.map((item: number[]) => item.map((sub: number) => sub * 2));
 }

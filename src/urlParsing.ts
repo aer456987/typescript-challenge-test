@@ -18,6 +18,22 @@ interface UrlParts {
   path: string;
 }
 
+// 參考別人後的寫法
 export function parseUrl(url: string): UrlParts {
-   // 請在此處寫下你的程式碼
+  const { protocol, host, pathname } = new URL(url);
+  return {
+    protocol: protocol,
+    hostname: host,
+    path: pathname
+  };
 }
+
+// 自己的寫法
+// export function parseUrl(url: string): UrlParts {
+//   const urlArr = url.split('/').filter(url => url);
+//   return {
+//     protocol: urlArr[0],
+//     hostname: urlArr[1],
+//     path: `/${urlArr[2]}`
+//   };
+// }

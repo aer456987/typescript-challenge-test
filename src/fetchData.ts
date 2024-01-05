@@ -6,4 +6,6 @@
  */
 
 // 請在下方寫下你的程式碼
-
+export function fetchData(url: string): Promise<any>{
+    return fetch(url).then((response) => response.json());
+}

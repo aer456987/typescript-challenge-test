@@ -46,19 +46,19 @@
 - [X] 20. 個人資訊管理模組：personalInfoModule
 - [X] 21. 公共工具函式模組：utilityFunctionsModule
 - [X] 22. 數據處理模組：dataProcessingModule
-- [ ] 23. 用戶資訊擴展：userInfoExtension
+- [X] 23. 用戶資訊擴展：userInfoExtension
 
 <br /><br />
 
 # 泛型
-- [ ] 24. 資料儲存：DataStore
-- [ ] 25 設置物件存取器：objectAccessor
-- [ ] 26. 過濾函式：filterByProperty
+- [X] 24. 資料儲存：DataStore
+- [X] 25. 設置物件存取器：objectAccessor
+- [X] 26. 過濾函式：filterByProperty
 
 <br /><br />
 
 # 延伸
-- [ ] 27. 使用 Map 和 Set：uniqueElements
-- [ ] 28. 使用 Promise 和 async/await：fetchData
-- [ ] 29. 非同步設計計算陣列總和：asyncSum
+- [X] 27. 使用 Map 和 Set：uniqueElements
+- [X] 28. 使用 Promise 和 async/await：fetchData
+- [X] 29. 非同步設計計算陣列總和：asyncSum
 - [ ] 30. 購物車邏輯：ShoppingCart

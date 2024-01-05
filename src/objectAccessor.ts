@@ -12,6 +12,18 @@
  * @param obj - 一個物件
  * @returns - 回傳一個物件，該物件有 get 和 set 兩個方法
  */
+
+// 寫法可參考 [keyword: Extends KeyOf]：https://old-oomusou.goodjack.tw/typescript/generics/
 export function createObjectAccessor<T>(obj: T) {
-    // 請在此處寫下你的程式碼
+    const data = { ...obj };
+
+    function set(key: keyof T, val: T[keyof T]) {
+        return data[key] = val;
+    }
+
+    function get(key: keyof T) {
+        return data[key];
+    }
+
+    return { set, get };
 }

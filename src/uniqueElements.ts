@@ -5,24 +5,6 @@
  * @returns - 回傳包含所有唯一元素的新陣列
  */
 
-// 自己的寫法
-// export function uniqueElements(array: number[]): number[] {
-//     // 請在此處寫下你的程式碼
-//     const newArray: number[] = [];
-//     array.forEach(item => {
-//         if (!newArray.includes(item)) {
-//             newArray.push(item)
-//         }
-//     })
-//     return newArray;
-// }
-
-// Set寫法
-// export function uniqueElements(array: number[]): number[] {
-//     return [...new Set(array)];
-// }
-
-// Map寫法
 export function uniqueElements(array: number[]): number[] {
     return Array.from(new Map(array.map((item) => [item, 1])).keys());
 }

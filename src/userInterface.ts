@@ -12,7 +12,6 @@
  * 輸出: 'John Doe'
  */
 
-// // 1. 定義 interface
 interface UserInfo {
     firstName: string,
     lastName: string
@@ -22,9 +21,3 @@ export function getFullName(user: UserInfo): string {
     // 在此實現函式
     return `${user.firstName} ${user.lastName}`;
 }
-
-// // 2. 寫在參數中
-// export function getFullName(user: { firstName: string, lastName: string}): string {
-//     // 在此實現函式
-//     return `${user.firstName} ${user.lastName}`;
-// }

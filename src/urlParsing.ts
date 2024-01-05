@@ -18,7 +18,6 @@ interface UrlParts {
   path: string;
 }
 
-// 參考別人後的寫法
 export function parseUrl(url: string): UrlParts {
   const { protocol, host, pathname } = new URL(url);
   return {
@@ -27,13 +26,3 @@ export function parseUrl(url: string): UrlParts {
     path: pathname
   };
 }
-
-// 自己的寫法
-// export function parseUrl(url: string): UrlParts {
-//   const urlArr = url.split('/').filter(url => url);
-//   return {
-//     protocol: urlArr[0],
-//     hostname: urlArr[1],
-//     path: `/${urlArr[2]}`
-//   };
-// }
